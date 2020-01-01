@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/grey"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Message_app">
+
+    <EditText
+        android:id="@+id/txt_phone_no"
+        android:layout_width="390dp"
+        android:layout_height="55dp"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:background="@color/white"
+        android:inputType="phone"
+        android:hint="Phone Number"
+
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txt_mesg"
+        android:layout_width="295dp"
+        android:layout_height="47dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:hint="Type Message"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/txt_mesg"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Send" />
+</RelativeLayout>
